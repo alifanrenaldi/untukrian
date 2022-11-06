@@ -141,7 +141,7 @@ button:hover {
                             <?php echo session()->getFlashdata('error') ?>
                         </div>
                     <?php } ?>
-                    <h1>Login Admin</h1>
+                    <h1>Login User</h1>
                     <hr>
                     <div class="mb-3">
                         <label for="inputUsername" class="form-label">

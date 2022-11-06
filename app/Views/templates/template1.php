@@ -72,10 +72,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
               <li class="nav-item" style="margin-right: 50px ;">
                 <!-- Button trigger modal -->
-              
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Masuk
-                </button>
+                <a href="/keluar" class="btn btn-danger">Logout</a>
+               
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog">

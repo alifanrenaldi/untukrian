@@ -26,6 +26,10 @@
             <span class="icon"></span>
             <span class="text">Management Bantuan</span>
           </a>
+          <a class="link-item" href="/keluar"<?php echo base_url('Help') ?>>
+            <span class="icon"></span>
+            <span class="text">Logout</span>
+          </a>
         </div>
       </nav>
 

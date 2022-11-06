@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
+
 class Login extends BaseController
 {
     public function index()
@@ -38,10 +39,10 @@ class Login extends BaseController
                     'is_admin' => $dataLogin['is_admin']
                 ];
                 session()->set($dataLogin);
-                if ($dataLogin['is_admin'] == '1'){
+                if ($dataLogin['is_admin'] == '1') {
                     return redirect()->to('/HomeAdmin');
                 }
-                return redirect()->to('/home');
+                return redirect()->to('/home2');
             } else {
                 session()->setFlashdata('error', 'Username atau password salah');
                 return redirect()->to("login");
@@ -55,4 +56,3 @@ class Login extends BaseController
         }
     }
 }
-
