@@ -38,11 +38,11 @@ class Login extends BaseController
                     'member_password_user' => $dataLogin['member_password_user'],
                     'is_admin' => $dataLogin['is_admin']
                 ];
-                session()->set($dataLogin);
+                $_SESSION['data'] = $dataLogin;
                 if ($dataLogin['is_admin'] == '1') {
                     return redirect()->to('/HomeAdmin');
                 }
-                return redirect()->to('/home2');
+                return redirect()->to('/home');
             } else {
                 session()->setFlashdata('error', 'Username atau password salah');
                 return redirect()->to("login");
