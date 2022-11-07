@@ -159,6 +159,11 @@ button:hover {
                         <input type="submit" name="login" class="btn btn-primary" value="LOGIN" style="background-color:#292314 ;">
                     </div>
                 </form>
+                <div class="row d-flex bg">
+				<div class="col">
+					<h5>Belum memiliki akun ? <a href="<?= base_url('/daftar'); ?>" class="">Daftar</a></h5>
+				</div>
+			</div>
             </div>
             <div class="right">
                 <img src="/Assets/AdminLTE-3.2.0/dist/img/Logo-Dimsum 2.png" alt="">
